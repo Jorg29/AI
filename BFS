@@ -14,7 +14,7 @@ class Graph:
     def addNode(self, node, lst):
         self.al[node] = lst
 
-    " bfs "
+    " bfs & nodes"
     def bfs(self, node):
         print (node.name)
         level = {node: 0}
@@ -64,4 +64,6 @@ if __name__ == '__main__':
     g.addNode(E, [E])
 
     g.bfs(A)
-#spyrogamiese
+
+
+    #spyrogamiese
