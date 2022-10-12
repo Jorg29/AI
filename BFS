@@ -10,7 +10,7 @@ class Graph:
 
     " Προσθέτω έναν κόμβο στο γράφημα με την μορφή ενός ζεύγους (κλειδί, τιμή). Το κλειδί είναι ο ίδιος ο κόμβος και η τιμή είναι η λίστα των κόμβων στους οποίους είναι δυνατή η πρόσβαση από αυτόν τον κόμβο. "
 
-    def addNode(self, node, list):
+    def addNode(self, node, lst):
         self.al[node] = lst
 
     " bfs & nodes"
@@ -34,12 +34,12 @@ class Graph:
             "Το next_node είναι μια προσωρινή λίστα για τη διατήρηση των τιμών που θα γίνουν από το επόμενο que."
  
             for x in queue:
-                for z in self.al[x]:
-                    if z not in level:
+                for v in self.al[x]:
+                    if v not in level:
                         print (v.name)
-                        level[z] = i
-                        neighbors [z] = x
-                        next_node.append(z)
+                        level[v] = i
+                        neighbors [v] = x
+                        next_node.append(v)
 
             queue = next_node
             i += 1
