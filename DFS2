@@ -54,11 +54,11 @@ class Graph:
 if __name__ == '__main__':
     
 
-    A = Node('A', 5)
-    B = Node('B', 3)
-    C = Node('C', 6)
-    D = Node('D', 7)
-    E = Node('E', 9)
+    A = Node('A', 2)
+    B = Node('B', 1)
+    C = Node('C', 1)
+    D = Node('D', 1)
+    E = Node('E', 1)
 
     g = Graph()
     g.addNode(A, [B,D])
